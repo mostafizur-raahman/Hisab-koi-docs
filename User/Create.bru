@@ -1,0 +1,41 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{USERS}}/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "loginType": "email",
+    "password": "password123",
+    "confirmPassword": "password123",
+    "role": "64f2e5c92b8c8c0012345678",
+    "profession": "Software Engineer",
+    "gender": "Male",
+    "fcmToken": "fcm_token_example_123456",
+    "image": "https://example.com/image.jpg",
+    "incomeReasons": [
+      "Salary",
+      "Freelance",
+      "Investments"
+    ],
+    "expenseReasons": [
+      "Rent",
+      "Groceries",
+      "Utilities"
+    ],
+    "recentDeeds": [
+      "Bought a new laptop",
+      "Paid rent",
+      "Donated to charity"
+    ]
+  }
+}

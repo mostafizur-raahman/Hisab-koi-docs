@@ -1,0 +1,18 @@
+meta {
+  name: Veryfy Opt
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{USERS}}/verify-otp
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "minimostafiz@gmail.com",
+    "otp": 12345
+  }
+}
