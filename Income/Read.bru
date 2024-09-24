@@ -5,12 +5,11 @@ meta {
 }
 
 get {
-  url: {{USERS}}
+  url: {{INCOMES}}
   body: none
   auth: none
 }
 
-params:query {
-  ~search: Doe
-  ~id: 66efaf5f796eb3149eb3191e
+headers {
+  Authorization : {{TOKEN}}
 }

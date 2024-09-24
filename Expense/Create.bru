@@ -1,0 +1,23 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{EXPENSES}}/create
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: {{TOKEN}}
+}
+
+body:json {
+  {
+    "userId": "66efd9cdc32a999da7de675e",
+    "expenseAmount": 200,
+    "reason": "Drinking something"
+  }
+}

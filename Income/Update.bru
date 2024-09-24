@@ -1,0 +1,25 @@
+meta {
+  name: Update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{INCOMES}}?id=66eff12265c9c21935559965
+  body: json
+  auth: none
+}
+
+params:query {
+  id: 66eff12265c9c21935559965
+}
+
+headers {
+  Authorization: {{TOKEN}}
+}
+
+body:json {
+  {
+    "incomeAmount": 2000
+  }
+}
