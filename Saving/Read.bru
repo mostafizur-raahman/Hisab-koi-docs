@@ -1,0 +1,21 @@
+meta {
+  name: Read
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{SAVINGS}}
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: {{TOKEN}}
+}
+
+body:json {
+  {
+    "userId": "66efd9cdc32a999da7de675e"
+  }
+}

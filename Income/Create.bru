@@ -1,0 +1,25 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{INCOMES}}/create
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: {{TOKEN}}
+}
+
+body:json {
+  {
+    "userId": "66efd9cdc32a999da7de675e",
+    "incomeAmount": 1010,
+    "reasons": [
+      "buy saban"
+    ]
+  }
+}
